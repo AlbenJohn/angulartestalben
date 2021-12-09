@@ -1,0 +1,74 @@
+half-modal {
+    /* modals are hidden by default */
+    display: none;
+
+    .half-modal {
+        /* modal container fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* z-index must be higher than .half-modal-background */
+        z-index: 1000;
+        
+        /* enables scrolling for tall modals */
+        overflow: auto;
+
+        // .half-modal-body {
+        //     // padding: 20px;
+        //     background: #fff;
+        //      min-width: 50vw;
+        //         max-width: 90vw;
+        //         max-height: 95vh;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     position: relative;
+        //     margin: 0 auto;
+        //     box-shadow: 10px 10px 25px #666;
+        //     border-top-left-radius: 5px;
+        //      border-top-right-radius: 5px;
+        //     overflow: hidden;
+        // }
+
+
+      .half-modal-body {
+            background: #fff;
+            // min-width: 50vw;
+            // max-width: 60vw;
+            max-height: 95vh;
+            top: 50%;
+            left: 50%;
+            position: relative;
+            transform: translate(-50%, -50%);
+            box-shadow: 10px 10px 25px #666;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            // overflow: hidden;
+            // overflow-y: scroll;
+        }
+
+    }
+
+    .half-modal-background {
+        /* modal background fixed across whole screen */
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* semi-transparent black  */
+        background-color: #000;
+        opacity: 0.2;
+        
+        /* z-index must be below .half-modal and above everything else  */
+        z-index: 900;
+    }
+}
+
+body.half-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}

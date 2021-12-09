@@ -1,0 +1,50 @@
+{"results":[  
+    { 
+        "id": "id", 
+        "name": "S.No", 
+        "field": "id",
+        "width":30, 
+        "sortable": true,
+        "filterable": true,
+        "resizable":true
+    },
+    { 
+        "id": "compaName", 
+        "name": "Company Name", 
+        "field": "compaName" ,
+        "sortable": true,
+        "resizable":true ,
+        "filterable": true
+        
+    },
+    {
+        "id": "editattachment",
+        "name": "Edit",
+        "toolTip": "editAttachment",
+        "field": "editattachment",
+        "width": 40,
+        "resizable": true,
+        "sortable": true,
+        "visible": true,
+        "cssClass": "cmpyeditgrid editgridcellright",
+        "formatter": "editformatter",
+        "dupformatter": "editformatter",
+        "rerenderOnResize": true
+      } ,
+      {
+          "id": "deleteattachment",
+          "name": "Delete",
+          "toolTip": "Delete",
+          "field": "deleteattachment",
+          "width": 40,
+          "resizable": true,
+          "sortable": true,
+          "visible": true,
+          "cssClass": "cmpyeditgrid editgridcellright",
+          "formatter": "deleteformatter",
+          "dupformatter": "deleteformatter",
+          "rerenderOnResize": true
+        }
+
+]
+}

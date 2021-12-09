@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "../node_modules/angular-slickgrid/lib/multiple-select/multiple-select.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/jquery-ui-dist/jquery-ui.min.css";
+@import "../node_modules/angular-slickgrid/styles/css/slickgrid-theme-bootstrap.css";
+@import "../node_modules/angular-slickgrid/lib/multiple-select/multiple-select.css";
+
+
+.slick-header-column.hover .slick-header-menubutton{display: none !important}
+.ui-state-default.slick-header-column.slick-header-sortable.ui-sortable-handle.slick-header-column-active.ui-state-hover{background: #35648b !important;    color: #fff;}
+
+.ui-state-default.slick-header-column.slick-header-sortable.ui-sortable-handle.slick-header-column-active{background: #1b447d !important;    color: #fff;}
+.slickgrid-container .slick-header-columns .slick-header-column .slick-sort-indicator{color: white;}
+.slickgrid-container .slick-header-columns .slick-header-column.ui-state-default{background: #1b447d;    color: #fff;}
+.slick-pagination .slick-pagination-nav .pagination .page-item a[class*="icon-seek-"]{font-family: "FontAwesome" !important;}
+.slickgrid-container .slick-pane-header{background-color: #1b447d;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.slick-gridmenu-button{color: white;}
+.slickgrid-container .slick-header-columns{background-color: #1b447d;}
+.slickgrid-container .slick-header-columns .slick-header-column{height: 24px;}
+.slick-pane.slick-pane-top.slick-pane-left {   top: 34px !important;}
+.slick-pagination{padding-top: 0;}
+// .slickgrid-container .slick-sort-indicator{margin-top: 0;}
+.slickgrid-container .slick-header-columns .slick-header-column .slick-sort-indicator{top:0}
+.slick-gridmenu-icon{color: #1b447d !important;}
+.slick-columnpicker-list li label{font-size: 10pt;;}
+.slick-columnpicker-list input[type=checkbox]:checked+label:before{    width: 20px; padding: 0px 3px; border: 1px solid #ccc;}
+.slick-columnpicker>.close{display: none;}
+.slick-columnpicker .title{display: none;}
+.slick-gridmenu-list li label{font-size: 10pt;}
+.slick-gridmenu-content{font-size: 10pt;}
+.slickgrid-container .grid-canvas .slick-cell{color: #1b447d;font-size: 15px;
+    font-weight: 500;}
+.slickgrid-container .slick-header-columns .slick-header-column.ui-state-default{border-right: 1px solid #fff;}
+
+//popup styles
+.headerpopup{background:#1b447d;    color: white; display: block;border-top-left-radius: 5px;border-top-right-radius: 5px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;}
+.closebtn{float: right;border: none;color: white;background: transparent; display: inherit;margin-top: 1px;
+   padding: 4px 8px;}
+.popupheadtitle{    font-size: 15pt;padding: 4px 8px; margin: 0;}

@@ -1,0 +1,28 @@
+
+
+<div class="ma_navbar">
+    <div class="row navini_row" >
+
+     
+        <div class="col-12">
+         
+           <div style="display: grid;float:right">
+           
+            <div class="navbar">
+              <!-- <div class="longview"> -->
+                <div *ngFor="let items of bottom_array;let i = index">
+                  <label  class="na_bottomlabel"  
+                  (click)="navselectedClick(i,items)">
+                    {{items.name}}
+                  </label>
+
+          
+
+            </div>
+
+
+           </div>  
+           
+        </div>
+    </div>
+</div>

@@ -1,0 +1,200 @@
+.ma_navbar{
+    width: 100%;
+    height: 5vh;
+    // background: #ccc;
+    background: #1b447d;
+}
+
+.log{
+    font-size: 250%;
+    top: 10%;
+    position: relative;
+    color: white;
+    display: block;
+    left: 1%;
+}
+
+.shortview{display:none}
+.na_toplabel{
+    
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+    font-size: 10pt;
+    float: right;
+    padding: 2px 4px;
+
+}
+.na_toplabel:hover{
+  background: #f1f1f1;
+  // padding: 4px;
+  border-radius: 3px;
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.na_bottomlabel{
+    float: right;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white;
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    // padding: 4px;
+}
+.na_bottomlabel.selected{
+    background: #f1f1f1;
+    // padding: 4px;
+    border-radius: 3px;
+    color: var(--mainColor);
+}
+.na_bottomlabel:hover{
+    background: #f1f1f1;
+    // padding: 4px;
+    border-radius: 3px;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+
+.navini_row{
+  margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.navbar {
+    overflow: hidden;
+    // background-color: #333;
+    padding: 0;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    // padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background: #f1f1f1;
+    // padding: 4px;
+    border-radius: 3px;
+    color: #1b447d;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 111;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.propic{width: 25px;height: 25px;    border-radius: 12.5px;}
+.nameLabel{text-transform: uppercase;
+  width: 70px;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;}
+  .fullnameLabel{
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+  .underConstrction:after{
+    content:"";
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGNTcyMjsiIGQ9Ik0yMTQuODUyLDgyLjY2N2MxMy42NDUsMS43NzcsMjcuMzkxLDIuNjY4LDQxLjE1MiwyLjY2N2MxMy43NjEsMC4wMDEsMjcuNTA3LTAuODksNDEuMTUyLTIuNjY3DQoJCWM1Ljg0MS0wLjc2Niw5Ljk1NS02LjEyMyw5LjE4OS0xMS45NjRjLTAuMDc0LTAuNTY1LTAuMTkzLTEuMTIzLTAuMzU3LTEuNjY4bC0xMy44NjctNDYuMjI5QzI4OC4wMDYsOS4zMDYsMjc1LjU3OCwwLjA2LDI2MS40NjUsMA0KCQloLTEwLjkyM2MtMTQuMTEzLDAuMDYtMjYuNTQxLDkuMzA2LTMwLjY1NiwyMi44MDVMMjA2LjAyLDY5LjAzNWMtMS42ODgsNS42NDQsMS41MTksMTEuNTg4LDcuMTY0LDEzLjI3NQ0KCQlDMjEzLjcyOSw4Mi40NzMsMjE0LjI4Nyw4Mi41OTMsMjE0Ljg1Miw4Mi42NjdMMjE0Ljg1Miw4Mi42Njd6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGNTcyMjsiIGQ9Ik0xNTguMzE4LDI1OS41NDFjMzAuOTY4LDEyLjY2OCw2NC4yNCwxOC43MjgsOTcuNjg1LDE3Ljc5Mg0KCQljMzMuNDQ1LDAuOTM2LDY2LjcxOC01LjEyNCw5Ny42ODUtMTcuNzkyYzQuODAyLTIuMjY5LDcuMjAzLTcuNzI2LDUuNjMyLTEyLjhsLTIzLjEwNC03Ni45NDkNCgkJYy0xLjY2LTUuNTI5LTcuNDE4LTguNzM0LTEyLjk5Mi03LjIzMmMtNDQuMTczLDEwLjYtOTAuMjI3LDEwLjYtMTM0LjQsMGMtNS41NzQtMS41MDItMTEuMzMyLDEuNzAzLTEyLjk5Miw3LjIzMmwtMjMuMTQ3LDc3LjAzNQ0KCQlDMTUxLjE2MywyNTEuODc0LDE1My41NTcsMjU3LjI3OCwxNTguMzE4LDI1OS41NDF6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGNTcyMjsiIGQ9Ik00NzMuMDcsNDcyLjIzNWwtMzItMTI4Yy0zLjU2NC0xNC4yNS0xNi4zNzItMjQuMjQzLTMxLjA2MS0yNC4yMzVoLTM2LjY3Mg0KCQljLTUuODkxLDAtMTAuNjY3LDQuNzc2LTEwLjY2NywxMC42NjdjMCwxMi44LTQyLjUzOSwzMi0xMDYuNjY3LDMycy0xMDYuNjY3LTE5LjItMTA2LjY2Ny0zMmMwLTUuODkxLTQuNzc2LTEwLjY2Ny0xMC42NjctMTAuNjY3DQoJCWgtMzYuNjcyYy0xNC42ODktMC4wMDgtMjcuNDk3LDkuOTg1LTMxLjA2MSwyNC4yMzVsLTMyLDEyOGMtNC4yODksMTcuMTQ1LDYuMTMzLDM0LjUyLDIzLjI3OCwzOC44MDkNCgkJYzIuNTQ1LDAuNjM3LDUuMTU5LDAuOTU4LDcuNzgzLDAuOTU2aDM3Mi4wMTFjMTcuNjczLDAuMDEsMzIuMDA4LTE0LjMwOSwzMi4wMTgtMzEuOTgyDQoJCUM0NzQuMDI4LDQ3Ny4zOTQsNDczLjcwNyw0NzQuNzgsNDczLjA3LDQ3Mi4yMzV6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==");
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    color: #4c7ba5;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .consclass{width: 100px;height: 100px;display: block;
+    position: relative;
+    margin: 0 auto;}
+    .u_c{width: 100%;
+    text-align: center;
+  color: #1d447b;font-size: 16pt;}
+
+ 
+    .logoutbtndiv{width: 100%;
+      text-align: center;
+      padding: 8px;}
+
+@media only screen and (min-width : 576px){
+    
+}
+@media only screen and (min-width : 768px){
+    .longview{display: none;}
+    .shortview{display: block;}
+}
+@media only screen and (min-width : 992px){
+.ma_navbar{height: 4vh;}
+.na_bottomlabel{padding-left: 2px;padding-right: 2px;font-size: 10pt;}
+}
+@media only screen and (min-width : 1200px){
+  .na_bottomlabel{padding-left: 8px;padding-right: 8px;}
+
+}
+@media only screen and (min-width : 1400px){
+  .na_bottomlabel{padding-left: 8px;padding-right: 8px;}
+
+}
+@media only screen and (min-width : 1600px){
+   .na_bottomlabel
+   {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 12pt;
+   }
+}

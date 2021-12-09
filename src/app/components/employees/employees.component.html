@@ -1,0 +1,96 @@
+<div class="row" style="align-items: center;">
+        <div style="display: block;flex-direction: column;" class="col-3">
+            <div class="btn-group form-group col-12" dropdown style=" margin: 8px;width: 100%; border: 1px solid #ced4da;   border-radius: .25rem;;" >
+                <button id="button-basic" dropdownToggle type="button" class="btn  dropdown-toggle"
+                        aria-controls="dropdown-basic" style="display: flex;
+                        align-items: center;
+                        padding-top: 4px;
+                        padding-bottom: 4px;" 
+                        (click)="Dropdownselect()">
+                        <div style="display: flex;align-items: center;width: 100%;">
+                           <label style="margin: 0;">
+                            Choose Options</label>  
+                            <span class="caret"></span>
+                        </div> 
+                </button>
+                <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu cp_dropdownmenu"
+                    role="menu" aria-labelledby="button-basic">
+                  <li role="menuitem" *ngFor="let ditems of DropDownArray" 
+                  (click)="Dropdownvalueselect(ditems)">
+                      <label class="dropdown-item" >{{ditems}}</label>
+                  </li>
+                  <li role="menuitem" *ngIf="DropDownArray.length ==0" 
+                  >
+                      <label class="dropdown-item" >No Data Found</label>
+                  </li>
+                </ul>
+              </div>
+        </div>
+        <div style="display: flex;flex-direction: column;" class="col-3">
+            <div style="display: flex;align-items: center;padding: 0;margin: 8px;" 
+            class="form-control ">
+                <input style="width: 100%; z-index: 1;background-color: transparent !important;font-size: 14pt;cursor:pointer;border: none;" id='a1' type="text"
+                       placeholder="Enter Value"
+                       class="form-control calendarInput"
+                       [(ngModel)]="EnteredValue" >
+              </div>
+        </div>
+<div class="col-3">
+    <button class="btn btn-primary" (click)="searchbutton()">Search</button>
+    <button class="btn btn-primary" (click)="refersh()">Refersh</button>
+</div>
+
+</div>
+              
+              
+              <div class="ed_table_Panel">
+                    <div class="" style="padding: 8px;">                       
+                          <div id ="demo-containerpurchase"  *ngIf="ColumDef.length > 0 ">
+                            <angular-slickgrid [gridId]="grididname"
+                            (onAngularGridCreated)="angularGridReady($event)"
+                            [columnDefinitions]="ColumDef"
+                            [gridOptions]="r_gridOptions"
+                            [dataset]="dataset"
+                            (sgOnClick)="onCellClicked($event.detail.eventData, $event.detail.args)" >
+                            </angular-slickgrid>                  
+                        </div>
+                     </div> 
+                </div>
+
+                <half-modal id="ConfirmationModal" [cssStyles]=" '55vw' ">
+                    <div class="row nomargin headerpopup" >
+                        <label class="popupheadtitle">Are you Sure Want To Delete?</label>
+                        <button class="closebtn" (click)="closehalfModal('newform-modal')"><span class="fa fa-times"></span></button> 
+                    </div>
+            
+            <div style="    display: flex;flex-wrap: wrap;justify-content: space-between;">
+                <div style="display: flex;align-items: center;justify-content: center;padding: 2vh;">
+                    <button style="margin: 0 1vh;" class="btn btn-primary AJX_ButtonClass" (click)="deletebtn()">Save</button>
+                    <button style="margin: 0 1vh;" class="btn btn-primary AJX_ButtonClass" (click)="CancelBtnClicked('ConfirmationModal')">Cancel</button>
+
+            </div>
+
+            </div>
+                </half-modal>
+
+
+                <!-- <half-modal id="editform" [cssStyles]=" '55vw' ">
+                    <div class="row nomargin headerpopup" >
+                        <label class="popupheadtitle">Are you Sure Want To Delete?</label>
+                        <button class="closebtn" (click)="closehalfModal('editform')"><span class="fa fa-times"></span></button> 
+                    </div>
+            
+            <div style="display: flex;flex-wrap: wrap;justify-content: space-between;">
+
+                <app-update [id]="singleitem"></app-update>
+
+
+                <div style="display: flex;align-items: center;justify-content: center;padding: 2vh;">
+                    <button style="margin: 0 1vh;" class="btn btn-primary AJX_ButtonClass" (click)="deletebtn()">Save</button>
+                    <button style="margin: 0 1vh;" class="btn btn-primary AJX_ButtonClass" (click)="CancelBtnClicked('editform')">Cancel</button>
+
+            </div>
+
+            </div>
+                </half-modal> -->
+

@@ -1,0 +1,102 @@
+{"results":[  
+    { 
+        "id": "id", 
+        "name": "S.No", 
+        "field": "id",
+        "width":30, 
+        "sortable": true,
+        "filterable": true,
+        "resizable":true
+    },
+    { 
+        "id": "fullName", 
+        "name": " Full Name", 
+        "field": "fullName" ,
+        "sortable": true,
+        "resizable":true ,
+        "filterable": true
+        
+    },
+    { 
+        "id": "dob", 
+        "name": "DOB", 
+        "field": "dob", 
+        "sortable": true,
+        "filterable": true,
+        "resizable":true 
+    },
+    { 
+        "id": "email", 
+        "name": " Email", 
+        "field": "email" ,
+        "sortable": true,
+        "resizable":true ,
+        "filterable": true
+        
+    },
+    { 
+        "id": "phone", 
+        "name": "Phone No", 
+        "field": "phone", 
+        "sortable": true,
+        "filterable": true ,
+        "resizable":true 
+    }
+    ,
+    { 
+        "id": "gender", 
+        "name": "Gender", 
+        "field": "gender", 
+        "sortable": true,
+        "filterable": true ,
+        "resizable":true 
+    }
+    ,
+    { 
+        "id": "address", 
+        "name": "Address", 
+        "field": "address", 
+        "sortable": true,
+        "filterable": true ,
+        "resizable":true 
+    }
+    ,
+    { 
+        "id": "position", 
+        "name": "Position", 
+        "field": "position", 
+        "sortable": true,
+        "filterable": true ,
+        "resizable":true 
+    }
+    ,
+    {
+        "id": "editattachment",
+        "name": "Edit",
+        "toolTip": "editAttachment",
+        "field": "editattachment",
+        "width": 40,
+        "resizable": true,
+        "sortable": true,
+        "visible": true,
+        "cssClass": "cmpyeditgrid editgridcellright",
+        "formatter": "editformatter",
+        "dupformatter": "editformatter",
+        "rerenderOnResize": true
+      } ,
+      {
+          "id": "deleteattachment",
+          "name": "Delete",
+          "toolTip": "Delete",
+          "field": "deleteattachment",
+          "width": 40,
+          "resizable": true,
+          "sortable": true,
+          "visible": true,
+          "cssClass": "cmpyeditgrid editgridcellright",
+          "formatter": "deleteformatter",
+          "dupformatter": "deleteformatter",
+          "rerenderOnResize": true
+        }
+    ]
+}

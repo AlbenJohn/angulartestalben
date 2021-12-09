@@ -1,0 +1,77 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M622.277 737.28h-486.794v-428.505h486.794v428.505zM622.277 308.775v428.505l211.102-193.772z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(0, 0, 0)"
+          }
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "docstatus-icon"
+        ]
+      },
+      "attrs": [
+        {
+          "fill": "rgb(0, 0, 0)"
+        }
+      ],
+      "properties": {
+        "order": 4,
+        "id": 0,
+        "name": "docstatus-icon",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 1,
+      "setId": 3,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "docstatusicon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "dox-",
+      "metadata": {
+        "fontFamily": "docstatusicon",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "showSelector": false,
+      "resetPoint": 59648,
+      "ie7": true,
+      "noie8": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 100,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}
